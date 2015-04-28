@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+	<head>
+	<style>
+		body {
+			padding-left: 10%;
+		}
+		.cube {
+			width: 200px;
+			height: 150px;
+		}
+		.ie .cube {
+		  background-color: yellow;
+		}
+		.ie7 .cube {
+		  background-color: orange;
+		}
+		.gecko .cube {
+		  background-color: gray;
+		}
+		.win.gecko .cube {
+		  background-color: red;
+		}
+		.linux.gecko .cube {
+		  background-color: pink;
+		}
+		.opera .cube {
+		  background-color: green;
+		}
+		.konqueror .cube {
+		  background-color: blue;
+		}
+		.webkit .cube {
+		  background-color: black;
+		}
+		.chrome .cube {
+			background-color: brown;
+		} 
+		.cube {
+		  width: 100px;
+		  height: 100px;
+		}
+		p {
+			width: 30%;
+			font-size: 1.2em;
+		}
+	</style>
+	<script type="text/javascript" src="cross.js"></script>
+	</head>
+	<body>
+		<h2>Crossbrowser cube</h2>
+		<div class="cube">
+		</div>
+		<p>The color of this box will change on different os/browsers:<br>
+			Internet Explorer - yellow<br>
+			Internet Explorer 7 - orange<br>
+			Gecko Engine on Windows (Firefox, Mozilla, Camino) - red<br>
+			Gecko Engine on Linux (Firefox, Mozilla, Camino) - pink<br>
+			Gecko Engine on Other OS (Firefox, Mozilla, Camino) - gray<br>
+			Opera - green<br>
+			Konqueror - blue<br>
+			Safari - black<br>
+			Chrome - brown
+		</p>
+	</body>
+</html>
